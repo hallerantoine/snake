@@ -7,11 +7,21 @@ class food{
     void create(int* snk,int len){
         bool check=true;
         while (check==true){
-            fd[0]=rand()%(nx-2) + 2;
-            fd[1]=rand()%(ny-2) + 2;
-            /*vérifier que la nourriture aparait pas sur le serpent*/
             check=false;
+            fd[0]=rand()%(nx-3) + 2;
+            fd[1]=rand()%(ny-3) + 2;
+            /*vérifier que la nourriture aparait pas sur le serpent*/
+            for (int i=0;i<len;i++){
+                if (snk[i]==fd[0] && snk[lenmax+i]==fd[1]){
+                    check=true;
+                }
+            }
         }
+    }
+
+    void reset(){
+        fd[0]=1;
+        fd[1]=1;
     }
 
     int* get(){
@@ -21,6 +31,7 @@ class food{
     private:
     const static int ny = 25;
     const static int nx = 50;
-    int fd[2]={1,1};
+    const static int lenmax=200;
+    int fd[2]={6,6};
 
 };

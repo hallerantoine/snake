@@ -67,6 +67,7 @@ void jeu(snake snk,background bg,food fd){
         /*gestion de la nourriture*/
         eat=snk.eat(fdpos);
         if (eat){
+            fd.reset();
             fd.create(pos,len);
             fdpos=fd.get();
             bg.addfood(fdpos);
