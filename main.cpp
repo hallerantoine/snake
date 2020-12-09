@@ -10,6 +10,7 @@
 #include "include/food.h"
 
 
+
 void jeu(snake snk,background bg,food fd){
 
     /*constantes*/
@@ -23,6 +24,9 @@ void jeu(snake snk,background bg,food fd){
 
     bool vivant=snk.isVivant();
     bool eat=false;
+
+    /*nouvelle graine de l'aléatoire*/
+    srand(time(NULL));
 
     /*initiation du snk et de la food*/
 
