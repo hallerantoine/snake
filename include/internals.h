@@ -1,5 +1,5 @@
 #include "../src/internals.cpp"
-
+#pragma once
 
 namespace internal{
 
