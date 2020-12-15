@@ -3,6 +3,7 @@
 class background{
     public:
 
+    /*initialisation*/
     void create(){
         for (int i=0; i<nx;i++){
             for (int j=0; j<ny; j++){
@@ -21,6 +22,8 @@ class background{
         return grille;
     }
 
+
+    /*ajout du serpent sur la grille*/
     void addsnake(int len, int* snk){
         for (int i=0;i<len;i++){
             int x= snk[i];
@@ -30,6 +33,8 @@ class background{
         
     }
 
+
+    /*enlève le serpent de la grille*/
     void removesnake(int len, int* snk){
         for (int i=0;i<len;i++){
             int x= snk[i];

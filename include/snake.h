@@ -5,6 +5,7 @@
 class snake{
     public:
 
+    /*initialisation*/
     void create (){
         for (int i=0;i<len;i++){
             pos[i]=1+i;
@@ -12,14 +13,13 @@ class snake{
         }
     }
 
-    int afficher (){
-        return pos[1];
-    }
 
     bool isVivant(){
         return vivant;
     }
 
+
+    /* vérifie si le serpent et encore vivant et actualise le bool vivant*/
     void check_vivant(){
         int xlast=pos[len-1];
         int ylast=pos[len-1+lenmax];

@@ -4,6 +4,8 @@
 
 class food{
     public:
+
+    /*initialisation*/
     void create(int* snk,int len){
         bool check=true;
         while (check==true){
