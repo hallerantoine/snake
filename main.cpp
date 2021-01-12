@@ -8,7 +8,7 @@
 #include "include/internals.h"
 #include "include/display.h"
 #include "include/food.h"
-#include "include/game.cpp"
+#include "src/game.cpp"
 
 
 int main(){
